@@ -25,7 +25,7 @@ const podcastSchema = new mongoose.Schema({
       ref: "User",
     },
   ],
-  user: 
+  category: 
     {
       type: mongoose.Types.ObjectId,
       ref: "Category",
