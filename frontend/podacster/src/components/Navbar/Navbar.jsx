@@ -8,12 +8,11 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "Category", path: "/category" },
+    { name: "Category", path: "/categories" },
     { name: "All Podcasts", path: "/all-podcasts" },
     { name: "Profile", path: "/profile" },
   ];
 
-  // Prevent body scroll when mobile menu is open
   useEffect(() => {
     if (mobileNav) {
       document.body.style.overflow = "hidden";
