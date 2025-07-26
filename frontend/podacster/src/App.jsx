@@ -7,6 +7,8 @@ import AuthLayout from "./layout/AuthLayout";
 import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
 import Categories from "./pages/Categories";
+import { ToastContainer } from "react-toastify";
+import ErrorPage from "./pages/ErrorPage";
 
 const App = () => {
   return (
@@ -22,9 +24,11 @@ const App = () => {
           <Route path="/" element={<AuthLayout />}>
             <Route path="signup" element={<SignUp />} />
             <Route path="login" element={<Login />} />
+            <Route path="error" element={<ErrorPage />} />
           </Route>
         </Routes>
       </Router>
+      <ToastContainer />
     </div>
   );
 };
